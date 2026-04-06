@@ -1,0 +1,68 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Welcome to My First Blog",
+      "slug": "hello-blog",
+      "content": "This is my very first post on the platform. Here, I share updates about starting my blogging journey and what I plan to build in the coming days. Stay tuned for more detailed posts across news, technology, and trending topics as the blog grows.",
+      "authorId": "1",
+      "section": "news",
+      "youtubeUrl": "https://youtu.be/iAtoZar5W58?si=OyrSom3xlKQZS1qW",
+      "createdAt": "2026-03-17T12:00:00.000Z",
+      "updatedAt": "2026-03-17T12:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "title": "What’s Trending Today",
+      "slug": "abc",
+      "content": "Today’s trending update covers the most talked‑about online discussions. From viral social media moments to quick updates about events gaining attention, this post highlights what people are currently engaging with. It’s a short roundup meant to keep you updated in minutes.",
+      "authorId": "1",
+      "section": "trending",
+      "youtubeUrl": "",
+      "createdAt": "2026-03-22T12:33:20.611Z",
+      "updatedAt": "2026-03-22T12:33:20.611Z"
+    },
+    {
+      "id": "3",
+      "title": "Tech Tips You Should Know",
+      "slug": "sample1234",
+      "content": "This post shares a few practical tech tips that can help improve your daily digital life. Whether it’s optimizing device performance, exploring new features in common apps, or understanding basic troubleshooting, these quick tips make technology easier and more enjoyable to use.",
+      "authorId": "1",
+      "section": "tech",
+      "createdAt": "2026-03-22T12:34:08.989Z",
+      "updatedAt": "2026-03-22T12:34:08.989Z"
+    },
+    {
+      "title": "Latest News Highlights",
+      "slug": "ashashb",
+      "content": "Here’s a brief roundup of the latest news developments. This post summarizes key headlines, quick updates, and important happenings locally and globally. It is designed to give you a fast overview without overwhelming details, perfect for readers who want essential updates.",
+      "authorId": "1",
+      "section": "news",
+      "id": "_osa6TJ4DjQ",
+      "createdAt": "2026-03-25T08:35:32.053Z",
+      "updatedAt": "2026-03-25T08:35:32.053Z"
+    },
+    {
+      "title": "Breaking News: Quick Updates",
+      "slug": "fffffffffff",
+      "content": "This post delivers a concise summary of breaking news events as they unfold. It highlights key points, major changes, and essential facts that readers should know right away. The goal is to keep you informed quickly and clearly with the most relevant information.",
+      "authorId": "1",
+      "section": "news",
+      "id": "cDcshL4zkIg",
+      "createdAt": "2026-03-25T17:50:37.673Z",
+      "updatedAt": "2026-03-25T17:50:37.673Z"
+    },
+    {
+      "title": "sample",
+      "slug": "sample",
+      "content": "something something something something something something something something",
+      "authorId": "1",
+      "section": "trending",
+      "youtubeUrl": "https://youtu.be/E1kipafZW2I?si=QXc9GBrolCGLdaQ_",
+      "id": "0C7l2W3IRdo",
+      "createdAt": "2026-04-05T16:37:42.956Z",
+      "updatedAt": "2026-04-05T16:37:42.956Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

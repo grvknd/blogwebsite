@@ -1,0 +1,8 @@
+
+/* reset-ish */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body { margin: 0; background: #0b1220; color: #e2e8f0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+/* optional: remove default link underline in nav */
+a { text-decoration: none; }
