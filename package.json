@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "api": "json-server --watch $DB_PATH --port $JSON_SERVER_PORT"
+    "api": "dotenv -e .env -- json-server --watch ./db1.json --port 5174"
 
   },
   "dependencies": {
