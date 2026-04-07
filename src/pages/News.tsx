@@ -13,7 +13,8 @@ export default function News() {
     
     const match = url.match(/(?:youtu\.be\/|v=)([^&?]+)/);
     if (!match) return "";
-    return `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg`;
+    const baseUrl = import.meta.env.VITE_YOUTUBE_THUMBNAIL_BASE_URL || "https://img.youtube.com/vi";
+    return `${baseUrl}/${match[1]}/hqdefault.jpg`;
   };
 
   useEffect(() => {
