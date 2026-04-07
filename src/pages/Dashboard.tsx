@@ -18,7 +18,8 @@ export default function Dashboard() {
 
   useEffect(() => {
     // Fetch posts for stats and recent posts
-    fetch("http://127.0.0.1:5175/posts")
+    const apiBase = import.meta.env.VITE_API_BASE_URL || "http://localhost:5174";
+    fetch(`${apiBase}/posts`)
       .then(res => res.json())
       .then(data => {
          

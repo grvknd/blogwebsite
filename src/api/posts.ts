@@ -123,7 +123,7 @@ export type Post = {
   updatedAt: string;
 };
 
-const API_BASE = import.meta.env.VITE_API_POSTS_BASE_URL || "http://127.0.0.1:5175";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5174";
 
 /* ------------------ HTTP Helpers ------------------ */
 

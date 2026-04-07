@@ -8,7 +8,7 @@ export type User = {
   password: string;
 };
 
-const API_BASE = import.meta.env.VITE_API_USERS_BASE_URL || "http://localhost:5174";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5174";
 
 async function get<T>(path: string): Promise<T> {
   const res = await fetch(`${API_BASE}${path}`);

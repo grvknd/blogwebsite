@@ -8,8 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "api1": "json-server --watch $DB1_PATH --port $JSON_SERVER_PORT_DB1",
-    "api2": "json-server --watch $DB2_PATH --port $JSON_SERVER_PORT_DB2"
+    "api": "json-server --watch $DB_PATH --port $JSON_SERVER_PORT"
 
   },
   "dependencies": {
