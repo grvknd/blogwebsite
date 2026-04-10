@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { getAllPosts, type Post } from "../api/posts";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Tech() {
+  const navigate = useNavigate();
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState<string | null>(null);
@@ -39,8 +40,32 @@ export default function Tech() {
         marginBottom: "24px",
         color: "white"
       }}>
-        <h1 style={{ margin: 0, fontSize: "24px", fontWeight: "bold" }}>Tech</h1>
-        <p style={{ margin: "8px 0 0 0", opacity: 0.9 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "15px", marginBottom: "8px" }}>
+          <button
+            onClick={() => navigate("/dashboard")}
+            style={{
+              background: "rgba(255, 255, 255, 0.2)",
+              border: "1px solid rgba(255, 255, 255, 0.3)",
+              color: "white",
+              padding: "8px 12px",
+              borderRadius: "6px",
+              cursor: "pointer",
+              fontSize: "14px",
+              fontWeight: "500",
+              transition: "all 0.2s"
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.background = "rgba(255, 255, 255, 0.3)";
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.background = "rgba(255, 255, 255, 0.2)";
+            }}
+          >
+            ← Back to Dashboard
+          </button>
+          <h1 style={{ margin: 0, fontSize: "24px", fontWeight: "bold" }}>Tech</h1>
+        </div>
+        <p style={{ margin: 0, opacity: 0.9 }}>
           Technology trends, programming tutorials, and industry updates
         </p>
       </div>

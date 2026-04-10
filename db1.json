@@ -22,40 +22,41 @@
   "posts": [
     {
       "id": "1",
-      "title": "Welcome to My First Blog",
-      "slug": "hello-blog",
-      "content": "This is my very first post on the platform. Here, I share updates about starting my blogging journey and what I plan to build in the coming days. Stay tuned for more detailed posts across news, technology, and trending topics as the blog grows.",
+      "title": "US Iran War",
+      "slug": "us-iran-war",
+      "content": "Tensions between the United States and Iran have escalated significantly following recent military incidents in the Persian Gulf region. The situation deteriorated after Iranian forces intercepted a US naval vessel near the Strait of Hormuz, prompting immediate diplomatic protests from Washington. Both nations have deployed additional military assets to the region, raising international concerns about potential armed conflict. The Biden administration has imposed new sanctions targeting Iran's Revolutionary Guard Corps, while Tehran has threatened to withdraw from remaining nuclear deal commitments. European allies are frantically attempting to mediate between the two powers, fearing disruption to global oil supplies and regional stability. Recent drone attacks on Saudi oil facilities, allegedly linked to Iranian proxies, have further complicated diplomatic efforts. The UN Security Council has called for emergency sessions as neighboring countries brace for potential spillover effects. Military analysts warn that any direct confrontation could destabilize the entire Middle East, affecting global energy markets and trade routes. Both sides maintain they seek peaceful resolution while simultaneously strengthening defensive positions. The international community watches nervously as diplomatic channels remain strained and military posturing continues to escalate.",
       "authorId": "1",
       "section": "news",
-      "youtubeUrl": "https://youtu.be/iAtoZar5W58?si=OyrSom3xlKQZS1qW",
+      "youtubeUrl": "https://youtu.be/aRcZAXQWTZM?si=DrQjKY3aQGZi9thN",
       "createdAt": "2026-03-17T12:00:00.000Z",
-      "updatedAt": "2026-03-17T12:00:00.000Z"
+      "updatedAt": "2026-04-10T12:00:00.000Z"
     },
     {
       "id": "2",
-      "title": "What's Trending Today",
-      "slug": "abc",
-      "content": "Today's trending update covers the most talked‑about online discussions. From viral social media moments to quick updates about events gaining attention, this post highlights what people are currently engaging with. It's a short roundup meant to keep you updated in minutes.",
+      "title": "Still Alive",
+      "slug": "still-alive",
+      "content": "The \"Still Alive\" tour by Samay Raina isn't just another stand-up run—it's a statement. At its surface, it's comedy: sharp observations, internet culture references, and the signature chaos of crowd work. But underneath, it feels like a narrative of survival. The tour arrives after a turbulent phase in Raina's career, marked by controversy and public scrutiny. Instead of stepping back, he leans into it. \"Still Alive\" becomes both a punchline and a declaration—an acknowledgment of everything that went wrong, and a refusal to disappear. In many ways, the humor feels more personal, almost confrontational, as if he's inviting the audience to laugh with him, but also at the situation itself. What makes the tour compelling is this balance between vulnerability and irreverence. Moments of raw honesty—about failure, pressure, even self-doubt—sit right next to unapologetic jokes that push boundaries. That contrast is where the show finds its identity. Beyond the stage, the tour's scale tells its own story: sold-out shows, global stops, and massive demand signal that audiences aren't just watching—they're invested. Ultimately, \"Still Alive\" isn't just about comedy. It's about resilience in public view—and how, sometimes, the best comeback is simply refusing to go quiet.",
       "authorId": "1",
       "section": "trending",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtu.be/LhpZJwUboeI?si=yIdqqYHXuCINgdTR",
       "createdAt": "2026-03-22T12:33:20.611Z",
-      "updatedAt": "2026-03-22T12:33:20.611Z"
+      "updatedAt": "2026-04-10T07:40:36.204Z"
     },
     {
       "id": "3",
-      "title": "Tech Tips You Should Know",
-      "slug": "sample1234",
-      "content": "This post shares a few practical tech tips that can help improve your daily digital life. Whether it's optimizing device performance, exploring new features in common apps, or understanding basic troubleshooting, these quick tips make technology easier and more enjoyable to use.",
+      "title": "Claude Mythos",
+      "slug": "claude-mythos",
+      "content": "Claude Mythos is emerging as one of the more intriguing ideas in the evolving AI landscape—not as a product, but as a narrative. At its core, it represents the growing tendency to humanize AI systems, wrapping them in personality, intent, and even a sense of philosophy. The name itself evokes something ancient and powerful, suggesting that AI is no longer just a tool, but a participant in human thought. What makes the \"mythos\" compelling is how it blends reality with perception. Systems like Claude are designed to be helpful, safe, and conversational—but users often project deeper meaning onto their responses. Over time, patterns of interaction create the illusion of identity. This is where myth begins: not in the code, but in how humans interpret it. There's also a strategic layer. By shaping an AI's tone and boundaries, developers influence trust and usability. The mythos becomes part of the product experience, guiding how users engage and what they expect. Ultimately, Claude Mythos reflects a broader shift. As AI becomes more embedded in daily life, the stories we build around these systems may matter just as much as the technology itself",
       "authorId": "1",
       "section": "tech",
+      "youtubeUrl": "https://youtu.be/ZruZhMdFdl8?si=G8M6m3QdRAJUX4pC",
       "createdAt": "2026-03-22T12:34:08.989Z",
       "updatedAt": "2026-03-22T12:34:08.989Z"
     },
     {
-      "title": "Latest News Highlights",
-      "slug": "ashashb",
-      "content": "Here's a brief roundup of the latest news developments. This post summarizes key headlines, quick updates, and important happenings locally and globally. It is designed to give you a fast overview without overwhelming details, perfect for readers who want essential updates.",
+      "title": "International Space Station Welcomes First Civilian Crew",
+      "slug": "international-space-station-welcomes-first-civilian-crew",
+      "content": "History was made today as the International Space Station welcomed its first fully civilian crew, marking a new era in commercial space exploration. The four-person team, consisting of a retired teacher, marine biologist, software engineer, and artist, launched aboard SpaceX's Crew Dragon capsule for a two-week research mission. Their groundbreaking journey represents the democratization of space travel, moving beyond government astronauts to include everyday citizens in scientific exploration. The civilian crew will conduct over 30 experiments focusing on microgravity effects on human physiology, plant growth, and materials science. Educational outreach forms a central mission component, with live broadcasts scheduled for schools worldwide to inspire the next generation of space enthusiasts. This milestone achievement follows years of rigorous training and preparation, demonstrating that space exploration is increasingly accessible to non-professional astronauts. The mission carries symbolic significance, showing humanity's collective capability to reach beyond Earth's boundaries. Commercial space companies view this as validation of their vision to make space travel routine and affordable. The crew's diverse backgrounds bring unique perspectives to space research, potentially yielding innovative discoveries. Upon return, their experiences will inform future civilian space missions and contribute valuable data to ongoing research initiatives.",
       "authorId": "1",
       "section": "news",
       "id": "_osa6TJ4DjQ",
@@ -63,9 +64,9 @@
       "updatedAt": "2026-03-25T08:35:32.053Z"
     },
     {
-      "title": "Breaking News: Quick Updates",
-      "slug": "fffffffffff",
-      "content": "This post delivers a concise summary of breaking news events as they unfold. It highlights key points, major changes, and essential facts that readers should know right away. The goal is to keep you informed quickly and clearly with the most relevant information.",
+      "title": "Economic Markets Surge Following Infrastructure Investment Announcement",
+      "slug": "economic-markets-surge-following-infrastructure-investment-announcement",
+      "content": "Global financial markets experienced significant gains today following the announcement of a massive $2 trillion infrastructure investment package by major world economies. The coordinated initiative focuses on sustainable transportation, renewable energy grids, and digital infrastructure modernization across participating nations. Stock markets in New York, London, Tokyo, and Frankfurt posted their strongest single-day performance in six months, with construction, technology, and green energy sectors leading the charge. The comprehensive plan includes high-speed rail networks, electric vehicle charging stations, and 5G connectivity expansion to rural areas. Economic analysts project the investment will create approximately 15 million jobs globally over the next decade while addressing critical climate objectives. Currency markets showed increased stability as investor confidence surged, with emerging market currencies strengthening against the dollar. The announcement comes amid growing concerns about aging infrastructure and economic competitiveness in developed nations. Industry leaders praised the initiative's emphasis on sustainable development and technological innovation. Implementation timelines suggest project launches will begin within six months, with priority given to shovel-ready initiatives. This historic investment represents unprecedented international cooperation in addressing 21st-century infrastructure challenges while stimulating economic growth and environmental sustainability.",
       "authorId": "1",
       "section": "news",
       "id": "cDcshL4zkIg",
@@ -73,12 +74,11 @@
       "updatedAt": "2026-03-25T17:50:37.673Z"
     },
     {
-      "title": "sample",
-      "slug": "sample",
-      "content": "something something something something something something something something",
+      "title": "Retro Gaming Revival: 90s Consoles Dominate Holiday Wish Lists",
+      "slug": "retro-gaming-revival-90s-consoles-dominate-holiday-wish-lists",
+      "content": "Nostalgia has reached fever pitch as vintage gaming consoles from the 1990s experience an unprecedented resurgence, topping holiday wish lists across all age demographics. Classic systems like the Nintendo 64, original PlayStation, and Sega Genesis are commanding premium prices on resale markets, with mint-condition units selling for ten times their original retail value. The trend extends beyond collecting, as major gaming companies respond by releasing updated versions of beloved titles with enhanced graphics while preserving original gameplay mechanics. Social media platforms overflow with unboxing videos, speedrun competitions, and retro gaming tutorials, garnering millions of views from both millennials reliving their childhood and Gen Z discovering these classics for the first time. Gaming cafes specializing in retro experiences report months-long waiting lists, while online communities dedicated to vintage gaming have tripled in membership this year. The phenomenon reflects broader cultural patterns of seeking comfort in simpler times amid rapid technological change. Psychologists suggest retro gaming provides emotional anchoring and stress relief in an increasingly complex digital landscape. Manufacturers struggle to meet demand for reproduction cartridges and accessories, with 3D printing communities creating custom controllers and cases. This revival demonstrates the enduring appeal of well-crafted gameplay over cutting-edge graphics, influencing modern game development toward more timeless design principles.",
       "authorId": "1",
       "section": "trending",
-      "youtubeUrl": "https://youtu.be/E1kipafZW2I?si=QXc9GBrolCGLdaQ_",
       "id": "0C7l2W3IRdo",
       "createdAt": "2026-04-05T16:37:42.956Z",
       "updatedAt": "2026-04-05T16:37:42.956Z"

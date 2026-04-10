@@ -29,7 +29,7 @@ export default function Profile() {
     };
   }, [currentUser]);
 
-  // ✅ Correct YouTube thumbnail extractor
+  
   const getThumb = (url?: string) => {
     if (!url) return "";
     const match = url.match(/(?:youtu\.be\/|v=)([^&?]+)/);
@@ -39,7 +39,7 @@ export default function Profile() {
 
   return (
     <div style={{ padding: 20, maxWidth: 900, margin: "0 auto" }}>
-      {/* Profile Header */}
+      
       <div
         style={{
           background: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)",
@@ -51,7 +51,7 @@ export default function Profile() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "20px", marginBottom: "20px" }}>
-          {/* Profile Avatar */}
+          
           <div
             style={{
               width: "80px",
@@ -79,7 +79,7 @@ export default function Profile() {
           </div>
         </div>
 
-        {/* Quick Stats */}
+        
         <div style={{ 
           display: "grid", 
           gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))", 
@@ -176,7 +176,7 @@ export default function Profile() {
         )}
       </div>
 
-      {/* ✅ BLOG POSTS GRID */}
+      
       {posts.length > 0 && (
         <div
           style={{

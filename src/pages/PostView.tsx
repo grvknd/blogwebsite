@@ -50,6 +50,31 @@ export default function PostView() {
 
   return (
     <div style={{ padding: 20, maxWidth: 900, margin: "0 auto" }}>
+      <div style={{ marginBottom: "20px" }}>
+        <button
+          onClick={() => navigate(-1)}
+          style={{
+            background: "rgba(148, 163, 184, 0.2)",
+            border: "1px solid rgba(148, 163, 184, 0.3)",
+            color: "#e2e8f0",
+            padding: "8px 12px",
+            borderRadius: "6px",
+            cursor: "pointer",
+            fontSize: "14px",
+            fontWeight: "500",
+            transition: "all 0.2s"
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.background = "rgba(148, 163, 184, 0.3)";
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.background = "rgba(148, 163, 184, 0.2)";
+          }}
+        >
+          ← Back
+        </button>
+      </div>
+      
       <h1>{post.title}</h1>
 
       <p style={{ color: "#94a3b8" }}>

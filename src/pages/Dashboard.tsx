@@ -41,7 +41,6 @@ export default function Dashboard() {
       .catch(err => console.log("Could not fetch posts:", err));
   }, [currentUser?.id]);
 
-  const openLogoutConfirm = () => setShowConfirm(true);
   const cancelLogout = () => setShowConfirm(false);
 
   const confirmLogout = () => {
@@ -63,14 +62,18 @@ export default function Dashboard() {
     display: "block",
     width: "100%",
     padding: "12px 20px",
-    background: isActive ? "rgba(59, 130, 246, 0.15)" : "transparent",
+    background: isActive ? "linear-gradient(135deg, rgba(59, 130, 246, 0.25) 0%, rgba(29, 78, 216, 0.25) 100%)" : "transparent",
     border: "none",
-    color: isActive ? "#60a5fa" : "#e2e8f0",
+    color: isActive ? "#ffffff" : "#e2e8f0",
     textAlign: "left" as const,
     cursor: "pointer",
-    fontSize: "14px",
-    borderLeft: isActive ? "3px solid #3b82f6" : "3px solid transparent",
-    transition: "all 0.2s"
+    fontSize: isActive ? "15px" : "14px",
+    fontWeight: isActive ? "600" : "normal",
+    borderLeft: isActive ? "4px solid #3b82f6" : "3px solid transparent",
+    borderRadius: isActive ? "0 8px 8px 0" : "0",
+    boxShadow: isActive ? "0 4px 12px rgba(59, 130, 246, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)" : "none",
+    transition: "all 0.3s ease",
+    transform: isActive ? "translateX(2px)" : "translateX(0)"
   });
 
   const tabDescriptionStyle = {
@@ -102,17 +105,18 @@ export default function Dashboard() {
               background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
             }}
           >
-            {/* Welcome Header */}
-            <div
-              style={{
-                background: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)",
-                padding: "30px",
-                borderRadius: "12px",
-                marginBottom: "30px",
-                boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
-              }}
-            >
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "20px" }}>
+            
+            <div style={{ display: "flex", gap: "20px", marginBottom: "30px", flexWrap: "wrap" }}>
+              <div
+                style={{
+                  background: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)",
+                  padding: "30px",
+                  borderRadius: "12px",
+                  boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
+                  flex: "2",
+                  minWidth: "300px"
+                }}
+              >
                 <div>
                   <h1 style={{ margin: "0 0 8px 0", fontSize: "32px", color: "white", fontWeight: "bold" }}>
                     Welcome back, {currentUser?.name}!
@@ -121,29 +125,50 @@ export default function Dashboard() {
                     Ready to create amazing content today?
                   </p>
                 </div>
-                <button
-                  onClick={() => navigate("/create")}
-                  style={{
-                    background: "rgba(255,255,255,0.2)",
-                    border: "2px solid rgba(255,255,255,0.3)",
-                    padding: "12px 24px",
-                    color: "white", 
-                    fontSize: "16px",
-                    borderRadius: "8px",
-                    cursor: "pointer",
-                    fontWeight: "bold",
-                    transition: "all 0.3s",
-                    backdropFilter: "blur(10px)"
-                  }}
-                  onMouseOver={(e) => {
-                    e.currentTarget.style.background = "rgba(255,255,255,0.3)";
-                  }}
-                  onMouseOut={(e) => {
-                    e.currentTarget.style.background = "rgba(255,255,255,0.2)";
-                  }}
-                >
-                  + Create New Blog
-                </button>
+              </div>
+
+              <div style={{
+                background: "rgba(51, 65, 85, 0.8)",
+                padding: "25px",
+                borderRadius: "12px",
+                border: "1px solid rgba(148, 163, 184, 0.2)",
+                backdropFilter: "blur(10px)",
+                flex: "1",
+                minWidth: "250px"
+              }}>
+                <h3 style={{ margin: "0 0 15px 0", color: "#f1f5f9", fontSize: "20px" }}>Quick Actions</h3>
+                <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                  <button
+                    onClick={() => navigate("/create")}
+                    style={{
+                      background: "#3b82f6",
+                      border: "none",
+                      padding: "12px 16px",
+                      color: "white",
+                      borderRadius: "8px",
+                      cursor: "pointer",
+                      fontSize: "14px",
+                      fontWeight: "500"
+                    }}
+                  >
+                    + Create New Blog
+                  </button>
+                  <button
+                    onClick={() => navigate("/profile")}
+                    style={{
+                      background: "rgba(148, 163, 184, 0.2)", 
+                      border: "1px solid rgba(148, 163, 184, 0.3)",
+                      padding: "12px 16px",
+                      color: "#e2e8f0",
+                      borderRadius: "8px",
+                      cursor: "pointer",
+                      fontSize: "14px",
+                      fontWeight: "500"
+                    }}
+                  >
+                    View Profile
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -211,79 +236,6 @@ export default function Dashboard() {
                   </div>
 
                 </div>
-              </div>
-            </div>
-
-            {/* Quick Actions */}
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "30px" }}>
-              <div style={{
-                background: "rgba(51, 65, 85, 0.8)",
-                padding: "25px",
-                borderRadius: "12px",
-                border: "1px solid rgba(148, 163, 184, 0.2)",
-                backdropFilter: "blur(10px)"
-              }}>
-                <h3 style={{ margin: "0 0 15px 0", color: "#f1f5f9", fontSize: "20px" }}>Quick Actions</h3>
-                <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                  <button
-                    onClick={() => navigate("/create")}
-                    style={{
-                      background: "#3b82f6",
-                      border: "none",
-                      padding: "12px 16px",
-                      color: "white",
-                      borderRadius: "8px",
-                      cursor: "pointer",
-                      fontSize: "14px",
-                      fontWeight: "500"
-                    }}
-                  >
-                    Write New Post
-                  </button>
-                  <button
-                    onClick={() => navigate("/profile")}
-                    style={{
-                      background: "rgba(148, 163, 184, 0.2)", 
-                      border: "1px solid rgba(148, 163, 184, 0.3)",
-                      padding: "12px 16px",
-                      color: "#e2e8f0",
-                      borderRadius: "8px",
-                      cursor: "pointer",
-                      fontSize: "14px",
-                      fontWeight: "500"
-                    }}
-                  >
-                    View Profile
-                  </button>
-                </div>
-              </div>
-
-              <div style={{
-                background: "rgba(51, 65, 85, 0.8)",
-                padding: "25px",
-                borderRadius: "12px",
-                border: "1px solid rgba(148, 163, 184, 0.2)",
-                backdropFilter: "blur(10px)"
-              }}>
-                <h3 style={{ margin: "0 0 15px 0", color: "#f1f5f9", fontSize: "20px" }}>Account</h3>
-                <p style={{ margin: "0 0 15px 0", color: "#94a3b8", fontSize: "14px" }}>
-                  Logged in as: {currentUser?.email}
-                </p>
-                <button
-                  onClick={openLogoutConfirm}
-                  style={{
-                    background: "rgba(239, 68, 68, 0.2)",
-                    border: "1px solid rgba(239, 68, 68, 0.4)",
-                    padding: "12px 16px",
-                    color: "#f87171",
-                    borderRadius: "8px",
-                    cursor: "pointer",
-                    fontSize: "14px",
-                    fontWeight: "500"
-                  }}
-                >
-                  Logout
-                </button>
               </div>
             </div>
 
